@@ -89,3 +89,9 @@ export interface Review {
   rating: number,
   movieId: number,
 }
+
+export interface MovieListPageTemplateProps {
+  title: string;
+  movies: BaseMovieProps[];
+  selectFavourite: (movieId: number) => void; // <-- Add this line
+}

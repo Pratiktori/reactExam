@@ -66,6 +66,7 @@ const MovieDetails: React.FC<MovieDetailsProps> = (movie) => {
                     label={`${movie.vote_average} (${movie.vote_count}`}
                 />
                 <Chip label={`Released: ${movie.release_date}`} />
+                <Chip label={`OriginalLanugage: ${movie.original_language}`} />
             </Paper>
             <Fab
                 color="secondary"
